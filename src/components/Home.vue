@@ -1,5 +1,5 @@
 <template>
-    <h3>Hello User this is Home Page</h3>
+    <h3>Hello Dear User this is Home Page</h3>
 </template>
 <script>
     export default {
