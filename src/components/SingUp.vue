@@ -11,6 +11,7 @@
 </form>
 </template>
 <script>
+import axios from 'axios';
 export default {
     name: 'SingUp',
     data(){
@@ -21,8 +22,19 @@ export default {
         }
     },
     methods:{
-        singup(){
-            console.warn("singup",this.name,this.email,this.password);
+     async singup(){
+            let result = await axios.post("http://localhost:3000/users",{
+                name: this.name,
+                email: this.email,
+                password: this.password
+            });
+            if(result.status == 201){
+               
+                localStorage.setItem("user-info",JSON.stringify(result.data));
+                this.$router.push({ name: 'Dashboard' });
+            }else{
+                alert("Something went wrong");
+            }
         }
     }
 
