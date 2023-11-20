@@ -1,5 +1,5 @@
 <template>
-    <h3>Hello Dear, User Welcom to Your Dashboard</h3>
+    <h3>Hello User, User Welcom to Your Dashboard</h3>
 </template>
 <script>
 export default{
