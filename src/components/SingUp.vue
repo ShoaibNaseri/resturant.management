@@ -1,6 +1,6 @@
 <template>
     <img height="390" src="../assets/logo/logo.png" alt="">
-    <h1>Sing Up Form For Vue</h1>
+    <h1>Sing Up Form Vue</h1>
 <form action="" @submit.prevent="singup()">
         <div class="register-form">
             <input type="text" v-model="name" name="" id="" placeholder="Name">
