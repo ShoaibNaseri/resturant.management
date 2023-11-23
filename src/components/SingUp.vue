@@ -1,6 +1,6 @@
 <template>
     <img height="390" src="../assets/logo/logo.png" alt="">
-    <h1>My Resturant Sign Up From</h1>
+    <h1>My Resturant  Sign Up From</h1>
 <form action="" @submit.prevent="singup()">
         <div class="register-form">
             <input type="text" v-model="name" name="" id="" placeholder="Name">
